@@ -7,5 +7,4 @@ public class Sulfuras extends Wrapper{
 
     public void updateQuality() {
     }
-
 }

@@ -6,8 +6,8 @@ public class TAFKAL80ETC extends Wrapper {
         super(item);
 
     }
-    public void updateQuality() {
 
+    public void updateQuality() {
         if (item.quality < 50) {
             item.quality ++;
             if (item.sellIn < 11) {
