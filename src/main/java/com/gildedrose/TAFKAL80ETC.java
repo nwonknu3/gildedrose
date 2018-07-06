@@ -7,22 +7,22 @@ public class TAFKAL80ETC extends Wrapper {
     }
 
     public void updateQuality() {
-        if (item.quality < 50) {
+        if (item.quality < MAX_QUALITY) {
             item.quality ++;
             if (item.sellIn < 11) {
-                if (item.quality < 50) {
+                if (item.quality < MAX_QUALITY) {
                     item.quality++;
                 }
             }
             if (item.sellIn < 6) {
-                if (item.quality < 50) {
+                if (item.quality < MAX_QUALITY) {
                     item.quality++;
                 }
             }
         }
         item.sellIn--;
-        if (item.sellIn < 0) {
-            item.quality = 0;
+        if (item.sellIn < MIN_QUALITY) {
+            item.quality = MIN_QUALITY;
         }
     }
 }

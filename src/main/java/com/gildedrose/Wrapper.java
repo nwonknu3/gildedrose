@@ -3,6 +3,13 @@ package com.gildedrose;
 public abstract class Wrapper {
     Item item;
 
+    int MAX_QUALITY = 50;
+    int MIN_QUALITY = 0;
+
+
+
+
+
     public Wrapper (Item item) {
         this.item = item;
     }

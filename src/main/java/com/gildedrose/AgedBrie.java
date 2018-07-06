@@ -5,12 +5,12 @@ public class AgedBrie extends Wrapper {
         super(item);
     }
     public void updateQuality() {
-        if (item.quality < 50) {
+        if (item.quality < MAX_QUALITY) {
             item.quality++;
         }
         item.sellIn--;
-        if (item.sellIn < 0) {
-            if (item.quality < 50) {
+        if (item.sellIn < MIN_QUALITY) {
+            if (item.quality < MAX_QUALITY) {
                 item.quality++;
             }
         }

@@ -6,19 +6,19 @@ public class Conjured extends Wrapper {
     }
 
     public void updateQuality() {
-        if (item.quality > 0) {
+        if (item.quality > MIN_QUALITY) {
             item.quality--;
         }
-        if (item.quality > 0) {
+        if (item.quality > MIN_QUALITY) {
             item.quality--;
         }
 
         item.sellIn--;
-        if (item.sellIn < 0) {
-            if (item.quality > 0) {
+        if (item.sellIn < MIN_QUALITY) {
+            if (item.quality > MIN_QUALITY) {
                 item.quality--;
             }
-            if (item.quality > 0) {
+            if (item.quality > MIN_QUALITY) {
                 item.quality--;
             }
         }
