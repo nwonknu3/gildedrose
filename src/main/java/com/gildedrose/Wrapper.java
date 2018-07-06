@@ -7,7 +7,10 @@ public abstract class Wrapper {
     int MIN_QUALITY = 0;
 
 
-
+    static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
+    static final String AGED_BRIE = "Aged Brie";
+    static final String CONJURED = "Conjured";
+    static final String TAFKAL80ETC = "Backstage passes to a TAFKAL80ETC concert";
 
 
     public Wrapper (Item item) {
@@ -15,16 +18,16 @@ public abstract class Wrapper {
     }
 
     public static Wrapper createFor(Item item) {
-        if ( item.name.equals("Aged Brie")) {
+        if ( item.name.equals(AGED_BRIE)) {
             return new AgedBrie(item);
         }
-        else if (item.name.equals("Sulfuras, Hand of Ragnaros")) {
+        else if (item.name.equals(SULFURAS)) {
             return new Sulfuras(item);
         }
-        else if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+        else if (item.name.equals(TAFKAL80ETC)) {
             return new TAFKAL80ETC(item);
         }
-        else if (item.name.contains("Conjured")) {
+        else if (item.name.contains(CONJURED)) {
             return new Conjured(item);
         }
         else {
