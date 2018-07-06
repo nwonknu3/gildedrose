@@ -1,6 +1,5 @@
 package com.gildedrose;
 
-
 public class Conjured extends Wrapper {
     public Conjured(Item item) {
         super(item);

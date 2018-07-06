@@ -1,7 +1,6 @@
 package com.gildedrose;
 
 public class AgedBrie extends Wrapper {
-
     public AgedBrie(Item item) {
         super(item);
     }

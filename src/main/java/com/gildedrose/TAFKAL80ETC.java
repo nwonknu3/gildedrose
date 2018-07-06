@@ -1,7 +1,6 @@
 package com.gildedrose;
 
 public class TAFKAL80ETC extends Wrapper {
-
     public TAFKAL80ETC(Item item) {
         super(item);
 
